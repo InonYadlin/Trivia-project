@@ -1,0 +1,14 @@
+﻿<Window x:Class="SimpleLoginApp.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu Window" Height="340" Width="200">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="150">
+            <Button Content="Create Room" Margin="10" Click="CreateRoom_Click" FontSize="14" Height="40"/>
+            <Button Content="Join Room" Margin="10" Click="JoinRoom_Click" FontSize="14" Height="40"/>
+            <Button Content="Add Question" Margin="10" Click="AddQuestion_Click" FontSize="14" Height="40"/>
+            <Button Content="Statistics" Margin="10" Click="Statistics_Click" FontSize="14" Height="40"/>
+            <Button Content="Sign Out" Margin="10" Click="SignOut_Click" FontSize="14" Height="40"/>
+        </StackPanel>
+    </Grid>
+</Window>

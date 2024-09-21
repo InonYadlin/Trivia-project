@@ -1,0 +1,29 @@
+﻿<Window x:Class="createRoom.CreateRoomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Create Room" Height="400" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Room Name:" Margin="0,0,0,5"/>
+            <TextBox x:Name="RoomNameTextBox" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Number of questions:" Margin="0,0,0,5"/>
+            <TextBox x:Name="QuestionAmountTextBox" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Number of Players:" Margin="0,0,0,5"/>
+            <TextBox x:Name="PlayersCountTextBox" Margin="0,0,0,20"/>
+
+            <Button Content="Create Room" Click="CreateRoomButton_Click"/>
+
+            <ListBox x:Name="PlayersListBox" Margin="0,20,0,10" Height="100" RenderTransformOrigin="0.5,0.5">
+                <ListBox.RenderTransform>
+                    <TransformGroup>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ListBox.RenderTransform>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>
